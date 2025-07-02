@@ -8,9 +8,11 @@
 
 **SentinelGrid** is a next-gen event security solution designed to protect public gatherings, concerts, college fests, summits, and more.  
 It unifies **QR-based access control**, **real-time surveillance**, **threat detection**, and **incident management** into a single command dashboard — powered by both smart AI models and rule-based systems.
-<img src = "sentinelgrid/images/Workflow.png" alt="">
 
----
+<p align="center">
+  <img src="sentinelgrid/images/Workflow.png" alt="SentinelGrid Workflow Diagram" width="60%">
+</p>
+
 
 ## 🧩 Core Modules
 
