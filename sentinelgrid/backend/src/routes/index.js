@@ -2,12 +2,18 @@
 
 const express = require('express');
 const router = express.Router();
-const { getEvents, createEvent, updateEvent, deleteEvent } = require('../controllers/index');
+const controllers = require('../controllers');
 
-// Define routes
-router.get('/events', getEvents);
-router.post('/events', createEvent);
-router.put('/events/:id', updateEvent);
-router.delete('/events/:id', deleteEvent);
+// User routes
+router.get('/users', controllers.getUsers);
+router.post('/users', controllers.createUser);
+
+// Event routes
+router.get('/events', controllers.getEvents);
+router.post('/events', controllers.createEvent);
+
+// Incident routes
+router.get('/incidents', controllers.getIncidents);
+router.post('/incidents', controllers.createIncident);
 
 module.exports = router;
