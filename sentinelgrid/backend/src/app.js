@@ -38,5 +38,23 @@ app.use('/api/auth', authRoutes);
 const userRoutes = require('./routes/users');
 app.use('/api/users', userRoutes);
 
+const ticketRoutes = require('./routes/tickets');
+app.use('/api/tickets', ticketRoutes);
+
+const zoneRoutes = require('./routes/zones');
+app.use('/api/zones', zoneRoutes);
+
+const alertRoutes = require('./routes/alerts');
+app.use('/api/alerts', alertRoutes);
+
+const accessLogRoutes = require('./routes/accesslogs');
+app.use('/api/accesslogs', accessLogRoutes);
+
+// Models
+require('./models/Ticket');
+require('./models/Zone');
+require('./models/Alert');
+require('./models/AccessLog');
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
