@@ -10,6 +10,11 @@ import Support from './pages/Support';
 import AdminPanel from './pages/AdminPanel';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Zones from './pages/Zones';
+import Tickets from './pages/Tickets';
+import Alerts from './pages/Alerts';
+import ScanTicket from './pages/ScanTicket';
+import { QRCodeSVG } from 'qrcode.react';
 
 const App = () => {
     const [user, setUser] = useState(null);
@@ -42,6 +47,10 @@ const App = () => {
                     <li><Link to="/notifications">Notifications</Link></li>
                     <li><Link to="/support">Support</Link></li>
                     <li><Link to="/admin">Admin Panel</Link></li>
+                    <li><Link to="/zones">Zones</Link></li>
+                    <li><Link to="/tickets">Tickets</Link></li>
+                    <li><Link to="/alerts">Alerts</Link></li>
+                    <li><Link to="/scan">Scan Ticket</Link></li>
                     {!user && <li><Link to="/login">Login</Link></li>}
                     {!user && <li><Link to="/register">Register</Link></li>}
                     {user && (
@@ -63,6 +72,10 @@ const App = () => {
                     <Route path="/notifications" element={user ? <Notifications /> : <Navigate to="/login" />} />
                     <Route path="/support" element={<Support />} />
                     <Route path="/admin" element={user && user.role === 'admin' ? <AdminPanel /> : <Navigate to="/login" />} />
+                    <Route path="/zones" element={user ? <Zones /> : <Navigate to="/login" />} />
+                    <Route path="/tickets" element={user ? <Tickets /> : <Navigate to="/login" />} />
+                    <Route path="/alerts" element={user ? <Alerts /> : <Navigate to="/login" />} />
+                    <Route path="/scan" element={user ? <ScanTicket /> : <Navigate to="/login" />} />
                 </Routes>
             </div>
         </Router>
