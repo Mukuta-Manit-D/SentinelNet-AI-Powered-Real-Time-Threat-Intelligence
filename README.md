@@ -58,7 +58,7 @@ cd sentinelgrid
 # Start backend
 ```bash
 cd backend
-uvicorn app.main:app --reload
+npm run dev
 ```
 
 # Start frontend
