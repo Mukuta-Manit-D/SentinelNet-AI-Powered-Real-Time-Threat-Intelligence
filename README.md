@@ -67,4 +67,6 @@ cd ../frontend
 npm install
 npm start
 ```
+# Contributions
+  This project is open for all contributors. If you have any queries, feel free contact me [here](mailto:mukutamanitd6@gmail.com).
 ## This Project is under developing and not deployed, currently its issues and pull requests are on hold.. Wait for the updates and then start to raise the pull requests and I'll review and merge it if satisfied.
