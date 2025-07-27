@@ -67,3 +67,4 @@ cd ../frontend
 npm install
 npm start
 ```
+## This Project is under developing and not deployed, currently its issues and pull requests are on hold.. Wait for the updates and then start to raise the pull requests and I'll review and merge it if satisfied.
